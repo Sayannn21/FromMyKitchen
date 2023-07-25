@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Delivery Site</title>
+    <link rel="stylesheet" type="text/css" href="del.css">
+</head>
+
+<body style="background:url('del28.png') ">
+    <header>
+        <h1>Delivery Site</h1>
+    </header>
+
+    <main>
+        <section id="order-form">
+            <h2>Deliver an Order</h2>
+            <form id="delivery-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="youraddress">Your Location:</label>
+                <input type="text" id="youraddress" required>
+
+                <label for="deliveryaddress">Delivery Location:</label>
+                <input type="text" id="deliveryaddress" required>
+
+                <label for="contact">Contact Number:</label>
+                <input type="number" id="contact" required>
+
+                <label for="fooditem">Food Item:</label>
+                <input type="text" id="fooditem" required>
+
+                <button type="submit">DELIVER</button>
+            </form>
+        </section>
+
+        <section id="order-list">
+            <h2>Recent Deliveries</h2>
+            <ul id="orders">
+                <!-- Dynamically populated with JavaScript -->
+            </ul>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="deliver26fire.js"></script>
+    <script src="deliver26.js"></script>
+</body>
+
+</html>

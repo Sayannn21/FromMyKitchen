@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="deliverstyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="navbar-delivery">
+            <a href="index.html">HOME</a>
+            <a href="index.html">Contact Us</a>
+        </div>
+    </section>
+    <section id="deliver">
+        <div class="box">
+            <img src="20230702_172710_0000.png">
+            <div class="page">
+                <div class="header">
+                    <a id="login" class="active" href="#login">login</a>
+                    <a id="signup" href="#signup">signup</a>
+                </div>
+                <div id="errorMsg"></div>
+                <div class="content">
+                    <form class="login" name="loginForm" method="POST">
+                        <input type="text" name="name" id="logName" placeholder="Username">
+                        <input type="password" name="password" id="logPassword" placeholder="Password">
+
+                        <br><br>
+                        <button type="button" class="seller-login-button" onclick="validateLoginForm()">Login</button>
+                    </form>
+                    <form class="signup" name="signupForm" onsubmit="return validateSignupForm()" method="POST">
+                        <input type="email" name="email" id="signEmail" placeholder="Email">
+                        <input type="text" name="phoneno" id="phoneno" placeholder="Phone number">
+                        <input type="text" name="name" id="signName" placeholder="Username">
+                        <input type="password" name="password" id="signPassword" placeholder="Password"><br>
+                        <input type="submit" value="SignUp">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.FromMyKitchen.com. All rights reserved!
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="deliver.js"></script>
+</body>
+</html>

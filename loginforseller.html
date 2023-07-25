@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>LogIn and SignUp Page</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" href="deliverboy.css"> -->
+</head>
+
+<body>
+    <section id="sellerr">
+        <center>
+            <h1>Seller Registration</h1>
+        </center>
+        <div class="box">
+            <img src="food.gif">
+            <div class="page">
+                <div class="header">
+                    <a id="login" class="active" href="#login">login</a>
+                    <a id="signup" href="#signup">signup</a>
+                </div>
+                <div id="errorMsg"></div>
+                <div class="content">
+                    <form class="login" name="loginForm" method="POST">
+                        <input type="text" name="name" id="logName" placeholder="Username">
+                        <input type="password" name="password" id="logPassword" placeholder="Password">
+
+                        <br><br>
+                        <button type="button" onclick="validateLoginForm()">Login</button>
+                    </form>
+                    <form class="signup" name="signupForm" onsubmit="return validateSignupForm()" method="POST">
+                        <input type="email" name="email" id="signEmail" placeholder="Email">
+                        <input type="text" name="name" id="signName" placeholder="Username">
+                        <input type="password" name="password" id="signPassword" placeholder="Password"><br>
+                        <input type="submit" value="SignUp">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 
+    <section id="deliverboi">
+        <header>
+            <center>
+                <h1>Delivery Agent Registration</h1>
+            </center>
+        </header>
+
+        <div class="container">
+            <div class="forms">
+                <div class="form login">
+                    <span class="title">Login</span>
+
+                    <form action="#">
+                        <div class="input-field">
+                            <input type="text" placeholder="Enter your email" required>
+                            <i class="uil uil-envelope icon"></i>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" class="password" placeholder="Enter your password" required>
+                            <i class="uil uil-lock icon"></i>
+                            <i class="uil uil-eye-slash showHidePw"></i>
+                        </div>
+
+                        <div class="checkbox-text">
+                            <div class="checkbox-content">
+                                <input type="checkbox" id="logCheck">
+                                <label for="logCheck" class="text">Remember me</label>
+                            </div>
+
+                            <a href="#" class="text">Forgot password?</a>
+                        </div>
+
+                        <div class="input-field button">
+                            <input type="button" value="Login">
+                        </div>
+                    </form>
+
+                    <div class="login-signup">
+                        <span class="text">Not a member?
+                            <a href="#" class="text signup-link">Signup Now</a>
+                        </span>
+                    </div>
+                </div>
+
+               
+                <div class="form signup">
+                    <span class="title">Registration</span>
+
+                    <form action="#">
+                        <div class="input-field">
+                            <input type="text" placeholder="Enter your name" required>
+                            <i class="uil uil-user"></i>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" placeholder="Enter your email" required>
+                            <i class="uil uil-envelope icon"></i>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" class="password" placeholder="Create a password" required>
+                            <i class="uil uil-lock icon"></i>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" class="password" placeholder="Confirm a password" required>
+                            <i class="uil uil-lock icon"></i>
+                            <i class="uil uil-eye-slash showHidePw"></i>
+                        </div>
+
+                        <div class="checkbox-text">
+                            <div class="checkbox-content">
+                                <input type="checkbox" id="termCon">
+                                <label for="termCon" class="text">I accepted all terms and conditions</label>
+                            </div>
+                        </div>
+
+                        <div class="input-field button">
+                            <input type="button" value="Signup">
+                        </div>
+                    </form>
+
+                    <div class="login-signup">
+                        <span class="text">Already a member?
+                            <a href="#" class="text login-link">Login Now</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="loginforseller.js"></script>
+    <!-- <script src="deliveryboy.js"></script> -->
+</body>

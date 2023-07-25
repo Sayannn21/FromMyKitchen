@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  
+  text-align: center;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+#order-form {
+  margin-bottom: 30px;
+}
+
+#order-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#order-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+#order-form button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#order-list {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+#orders {
+  list-style-type: none;
+  padding: 0;
+}
+
+#orders li {
+  margin-bottom: 10px;
+}
